@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guia completo | TAX ONE Conferência da Reforma</title>
+  <meta name="description" content="TAX ONE Conferência da Reforma: ferramenta interna que confere a Reforma Tributária no TAX ONE UAT em cinco etapas e entrega o relatório final em Excel e o plano de teste em Word.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-tr.svg" alt="Thomson Reuters" onerror="this.hidden=true">
+        <span class="tag">TAX ONE Conferência da Reforma</span>
+      </a>
+      <a class="btn secondary" href="http://127.0.0.1:5055" target="_blank" rel="noopener" title="Só funciona depois de instalar e ligar a ferramenta neste computador">Já instalei: abrir</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="intro" id="inicio">
+      <div class="wrap">
+        <p class="eyebrow">Tax Lab · Reforma Tributária</p>
+        <h1>TAX ONE <em>Conferência da Reforma</em></h1>
+        <p class="lead">Confere a Reforma Tributária no TAX ONE UAT em cinco etapas e entrega o relatório final em Excel e o plano de teste em Word. Abaixo está cada tela da ferramenta, com o que informar, o que clicar e o que você recebe.</p>
+      </div>
+    </section>
+
+    <section class="start-sec" aria-labelledby="t-comece">
+      <div class="wrap">
+        <h2 id="t-comece">Comece por <em>aqui</em></h2>
+        <div class="oneclick">
+          <div>
+            <h3>Instalação em um clique</h3>
+            <p>Baixe o instalador e abra o arquivo. Ele confere o Python (e instala, se faltar), instala a ferramenta, confere o ambiente e abre a tela para você informar usuário, senha, empresa e período.</p>
+          </div>
+          <div class="oneclick-a">
+            <a class="btn primary big" href="downloads/Instalar_TaxOne.exe" download>Clique aqui para instalar</a>
+            <p>Se o Windows avisar que o editor é desconhecido, escolha <strong>Mais informações</strong> e <strong>Executar assim mesmo</strong>. Se a TI bloquear o arquivo, use o passo a passo abaixo.</p>
+          </div>
+        </div>
+        <div class="downloads">
+          <h3>Tudo o que você precisa baixar</h3>
+          <ul>
+            <li>
+              <div class="dl-info">
+                <strong>Instalador único</strong>
+                <span class="dl-meta">Instalar_TaxOne.exe · <span data-dl="exe-tamanho">5,0 MB</span></span>
+                <p>Já traz a ferramenta, o modelo do plano em Word e a conferência do ambiente. Instala o Python se faltar.</p>
+              </div>
+              <a class="btn primary" href="downloads/Instalar_TaxOne.exe" download>Baixar</a>
+            </li>
+            <li>
+              <div class="dl-info">
+                <strong>Pacote em ZIP</strong> (alternativa)
+                <span class="dl-meta">TaxOneConferencia.zip · <span data-dl="zip-tamanho">4,8 MB</span></span>
+                <p>Extraia numa pasta do seu computador e dê dois cliques em <code>instalar.bat</code>. Use se a TI bloquear o instalador único.</p>
+              </div>
+              <a class="btn secondary" href="downloads/TaxOneConferencia.zip" download>Baixar</a>
+            </li>
+            <li>
+              <div class="dl-info">
+                <strong>Python 3.13 (64 bits)</strong> (só se faltar)
+                <span class="dl-meta">python-3.13.17-amd64.exe · 27 MB · python.org</span>
+                <p>O instalador já oferece instalar o Python por você. Baixe aqui só se preferir instalar à mão e marque <code>Add python.exe to PATH</code>.</p>
+              </div>
+              <a class="btn secondary" href="https://www.python.org/ftp/python/3.13.17/python-3.13.17-amd64.exe">Baixar</a>
+            </li>
+          </ul>
+          <details>
+            <summary>Conferir a integridade dos arquivos (SHA-256)</summary>
+            <p>No PowerShell, na pasta do arquivo: <code>Get-FileHash .\Instalar_TaxOne.exe</code></p>
+            <p><code>Instalar_TaxOne.exe</code><br><code data-dl="exe-sha">d3c66e18155ba48221514c609d2d4da86407422b29b97a7ad766b7f9a56e2fe6</code></p>
+            <p><code>TaxOneConferencia.zip</code><br><code data-dl="zip-sha">b2e80e955d48e34194731f2cbdfe335475c0ab018384c52535ee24d111236b48</code></p>
+          </details>
+        </div>
+        <h3 class="alt">Ou faça o passo a passo</h3>
+        <ol class="start">
+          <li>
+            <span class="n" aria-hidden="true">1</span>
+            <h3>Tenha o Python</h3>
+            <p>Só se ainda não tiver. Não sabe? Pule: o passo 2 confere e, se faltar, oferece instalar para você, sem administrador. Se instalar à mão, marque <code>Add python.exe to PATH</code>.</p>
+            <a class="btn secondary" href="https://www.python.org/ftp/python/3.13.17/python-3.13.17-amd64.exe">Baixar o Python 3.13 (64 bits)</a>
+          </li>
+          <li>
+            <span class="n" aria-hidden="true">2</span>
+            <h3>Instale a ferramenta, uma vez só</h3>
+            <p>Baixe o pacote, extraia numa pasta do seu computador (não use pasta do OneDrive) e dê dois cliques em <code>instalar.bat</code>. Para atualizar, repita com o pacote novo.</p>
+            <a class="btn primary" href="downloads/TaxOneConferencia.zip" download>Baixar o pacote (ZIP)</a>
+          </li>
+          <li>
+            <span class="n" aria-hidden="true">3</span>
+            <h3>Abra a ferramenta</h3>
+            <p>Depois de instalada, a ferramenta liga sozinha quando o Windows inicia. Abra pelo atalho <code>Conferencia Reforma Tributaria TAX ONE</code> da Área de Trabalho ou pelo botão abaixo.</p>
+            <p class="warn"><strong>O botão não liga a ferramenta.</strong> Ele só abre o endereço <code>127.0.0.1:5055</code> neste computador. Se aparecer "se recusou a se conectar", instale (passo 2) ou rode <code>iniciar.bat</code> na pasta da ferramenta.</p>
+            <a class="btn secondary" href="http://127.0.0.1:5055" target="_blank" rel="noopener">Abrir a ferramenta</a>
+          </li>
+          <li>
+            <span class="n" aria-hidden="true">4</span>
+            <h3>Preencha e execute</h3>
+            <p>Informe usuário e senha do cliente, empresa e período e clique em <strong>Executar todas as etapas</strong>. A execução completa leva de 10 a 15 minutos.</p>
+            <a class="btn secondary" href="#etapa-1">Ver as telas</a>
+          </li>
+        </ol>
+
+        <div class="check">
+          <h3>Antes de começar <span class="hint">marque o que você já tem</span></h3>
+          <ul>
+            <li><label><input type="checkbox"><span>Windows com Microsoft Edge e Microsoft Word</span></label></li>
+            <li><label><input type="checkbox"><span>Python 3.10 ou superior (passo 1: se faltar, o instalador oferece instalar)</span></label></li>
+            <li><label><input type="checkbox"><span>ZScaler autenticado (rede Thomson Reuters)</span></label></li>
+            <li><label><input type="checkbox"><span>Usuário e senha do cliente no TAX ONE UAT</span></label></li>
+            <li><label><input type="checkbox"><span>Código da empresa e período a conferir</span></label></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="layout-band">
+      <div class="wrap layout">
+        <nav class="index" aria-label="Nesta página">
+          <p class="index-t">As telas</p>
+          <ol>
+            <li><a href="#etapa-1"><b>1</b> Relatório de conferência</a></li>
+            <li><a href="#etapa-2"><b>2</b> SAFX x relatório</a></li>
+            <li><a href="#etapa-3"><b>3</b> Apuração x relatório</a></li>
+            <li><a href="#etapa-4"><b>4</b> Conciliação x apuração</a></li>
+            <li><a href="#etapa-5"><b>5</b> Relatório final</a></li>
+            <li><a href="#andamento">Andamento</a></li>
+            <li><a href="#duvidas">Dúvidas comuns</a></li>
+          </ol>
+        </nav>
+
+        <div class="content">
+          <h2 id="t-telas">A ferramenta, <em>tela a tela</em></h2>
+          <p class="intro-t">As etapas aparecem nesta ordem, uma embaixo da outra. As etapas 2 a 5 ficam apagadas até a anterior terminar. Você pode rodar uma por vez ou tudo de uma vez.</p>
+          <p class="preview-note"><strong>Prévia das telas.</strong> Os campos e botões pontilhados abaixo mostram como a ferramenta aparece; o preenchimento e a execução acontecem na ferramenta instalada (passo 3).</p>
+
+          <article class="card" id="etapa-1" data-spy aria-labelledby="t-e1">
+            <header class="card-h">
+              <span class="badge" aria-hidden="true">1</span>
+              <div>
+                <h3 id="t-e1">Relatório de conferência <span class="tagline">obrigatório</span></h3>
+                <p class="desc">Data Warehouse › Relatórios › Conferências › Documentos Fiscais e Utilities - Reforma Tributária.</p>
+              </div>
+            </header>
+            <p class="env">Ambiente: <strong>TAX ONE UAT</strong></p>
+
+            <p class="k">Você informa</p>
+            <dl class="fields">
+              <div class="field"><dt>Usuário</dt><dd>Usuário do cliente no TAX ONE UAT</dd></div>
+              <div class="field"><dt>Senha</dt><dd>Senha do cliente</dd></div>
+              <div class="field"><dt>Empresa (código)</dt><dd>ex.: C04</dd></div>
+              <div class="field"><dt>Período (MM/AAAA)</dt><dd>ex.: 10/2026</dd></div>
+            </dl>
+            <p class="sub-k">Opções avançadas <span class="opc">(ficam recolhidas na ferramenta)</span></p>
+            <dl class="fields">
+              <div class="field"><dt>Estabelecimento</dt><dd>[ Todos ]</dd></div>
+              <div class="field"><dt>Origem</dt><dd>Todas</dd></div>
+            </dl>
+            <p class="opt"><span class="chk" aria-hidden="true"></span><span><strong>Prints com a tela inteira do computador</strong>, mostrando a data e a hora do Windows. <em>Marcada por padrão.</em> O navegador do robô aparece na tela durante a execução: evite usar o computador enquanto ele roda.</span></p>
+            <p class="note">A senha fica só na memória da ferramenta enquanto as etapas rodam (é usada de novo na apuração e na conciliação) e nunca é gravada em disco.</p>
+
+            <p class="k">Você clica</p>
+            <p class="actions"><span class="chip">Executar relatório</span></p>
+
+            <p class="k">Você recebe</p>
+            <p class="files"><span class="file">Relatório Documentos Fiscais</span><span class="file">Relatório Utilities</span></p>
+
+            <div class="all">
+              <h4>Executar tudo de uma vez</h4>
+              <p>Roda as etapas 1 a 5 em sequência (relatório › SAFX › apuração › conciliação › relatório final e plano de teste em Word). Depois é só baixar os resultados de cada etapa.</p>
+              <dl class="fields one">
+                <div class="field"><dt>SAFX para a etapa 2 <span class="opc">(opcional — sem arquivos, a etapa 2 é pulada)</span></dt><dd>Escolher arquivos (.txt, .csv, .xlsx ou .xlsm)</dd></div>
+              </dl>
+              <p class="opt"><span class="chk" aria-hidden="true"></span><span>Criar nova sessão de conciliação. <em>Marcada por padrão.</em></span></p>
+              <p class="actions"><span class="chip strong">Executar todas as etapas</span></p>
+            </div>
+          </article>
+
+          <article class="card" id="etapa-2" data-spy aria-labelledby="t-e2">
+            <header class="card-h">
+              <span class="badge" aria-hidden="true">2</span>
+              <div>
+                <h3 id="t-e2">Análise SAFX x relatório <span class="tagline">opcional</span></h3>
+                <p class="desc">Anexe as SAFX que tiver (3007, 3008, 3009, 3042, 3043). O nome do arquivo precisa conter o número da SAFX.</p>
+              </div>
+            </header>
+            <p class="unlock">Libera depois da etapa 1</p>
+
+            <p class="k">Você informa</p>
+            <dl class="fields one">
+              <div class="field"><dt>Arquivos SAFX</dt><dd>Escolher arquivos (.txt, .csv, .xlsx ou .xlsm)</dd></div>
+            </dl>
+            <p class="note">O alinhamento dos campos é descoberto automaticamente pelos dados (posição na SAFX x coluna do relatório, inclusive casas decimais); o resultado traz a aba "Mapeamento de campos".</p>
+
+            <p class="k">Você clica</p>
+            <p class="actions"><span class="chip">Executar análise</span><span class="chip">Pular esta etapa</span></p>
+
+            <p class="k">Você recebe</p>
+            <p class="files"><span class="file">Resultado da análise</span><span class="file">Documentos não encontrados (N)</span></p>
+            <p class="note">Mais uma tabela-resumo por SAFX, com registros, OK, com divergência, não encontrados e fora do período.</p>
+          </article>
+
+          <article class="card" id="etapa-3" data-spy aria-labelledby="t-e3">
+            <header class="card-h">
+              <span class="badge" aria-hidden="true">3</span>
+              <div>
+                <h3 id="t-e3">Apuração x relatório de conferência</h3>
+                <p class="desc">Reforma Tributária do Consumo › Apuração Fiscal CBS-IBS-IS: exporta débitos e créditos do mesmo período e compara documento a documento.</p>
+              </div>
+            </header>
+            <p class="unlock">Libera depois da etapa 1 e de concluir ou pular a etapa 2</p>
+
+            <p class="k">Você informa</p>
+            <p class="none">Nada novo: usa o usuário, a empresa e o período da etapa 1.</p>
+
+            <p class="k">Você clica</p>
+            <p class="actions"><span class="chip">Gerar apuração e comparar</span></p>
+
+            <p class="k">Você recebe</p>
+            <p class="files"><span class="file">Resultado Apuração x Conferência</span><span class="file">Apuração (débitos e créditos exportados)</span></p>
+            <p class="note">Mais uma tabela-resumo por imposto, com as diferenças em destaque.</p>
+          </article>
+
+          <article class="card" id="etapa-4" data-spy aria-labelledby="t-e4">
+            <header class="card-h">
+              <span class="badge" aria-hidden="true">4</span>
+              <div>
+                <h3 id="t-e4">Conciliação Fiscal-Contábil x apuração</h3>
+                <p class="desc">Reforma Tributária do Consumo › Conciliação Fiscal-Contábil: empresa, primeira filial e mesmo período. Cria a sessão Contribuinte x Fisco, aguarda concluir, exporta as inconsistências de débitos e créditos e compara com a apuração.</p>
+              </div>
+            </header>
+            <p class="unlock">Libera depois da etapa 3</p>
+
+            <p class="k">Você informa</p>
+            <p class="opt"><span class="chk" aria-hidden="true"></span><span>Criar nova sessão de conciliação. <em>Marcada por padrão.</em> Desmarque para usar a última sessão já processada do período.</span></p>
+
+            <p class="k">Você clica</p>
+            <p class="actions"><span class="chip">Gerar conciliação e comparar</span></p>
+
+            <p class="k">Você recebe</p>
+            <p class="files"><span class="file">Resultado Conciliação x Apuração</span><span class="file">Conciliação (arquivos exportados)</span></p>
+            <p class="note">Mais uma tabela-resumo por imposto, com o número da sessão de conciliação e as diferenças em destaque. Ao fim desta etapa, o relatório final é gerado sozinho.</p>
+          </article>
+
+          <article class="card" id="etapa-5" data-spy aria-labelledby="t-e5">
+            <header class="card-h">
+              <span class="badge" aria-hidden="true">5</span>
+              <div>
+                <h3 id="t-e5">Relatório final</h3>
+                <p class="desc">Um Excel consolidado com o resumo e as divergências de todas as etapas e o <strong>plano de teste em Word</strong> (modelo do cliente preenchido com cliente, ambiente, período, prints de tela de cada etapa e os Excel anexados). É gerado automaticamente ao fim da etapa 4.</p>
+              </div>
+            </header>
+            <p class="unlock">Libera depois da etapa 3</p>
+
+            <p class="k">Você informa</p>
+            <p class="none">Nada: usa os resultados das etapas anteriores.</p>
+
+            <p class="k">Você clica</p>
+            <p class="actions"><span class="chip">Gerar relatório final agora</span></p>
+
+            <p class="k">Você recebe</p>
+            <p class="files"><span class="file">Relatório final (Excel)</span><span class="file">Plano de teste (Word)</span></p>
+          </article>
+
+          <article class="card" id="andamento" data-spy aria-labelledby="t-and">
+            <header class="card-h">
+              <div>
+                <h3 id="t-and">Andamento e arquivos</h3>
+                <p class="desc">No fim da página da ferramenta fica um registro com a hora de cada passo, atualizado a cada poucos segundos enquanto a execução roda.</p>
+              </div>
+            </header>
+            <ul class="states">
+              <li><strong>Em andamento:</strong> o texto da etapa termina com reticências (...).</li>
+              <li><strong>Concluída:</strong> aparecem o resumo do resultado e os botões de download.</li>
+              <li><strong>Erro:</strong> a mensagem do erro aparece no lugar do resumo.</li>
+              <li><strong>Pulada:</strong> só acontece na etapa 2.</li>
+            </ul>
+            <p class="note">Os arquivos também ficam no seu computador, na pasta <code>execucoes</code> dentro da pasta da ferramenta, com uma subpasta para cada execução (data e hora no nome).</p>
+          </article>
+
+          <h2 id="duvidas" data-spy class="h-faq">Dúvidas <em>comuns</em></h2>
+          <div class="faq">
+            <div class="q">
+              <h3>O instalar.bat deu erro</h3>
+              <p>O instalador confere o Python e, se faltar, pergunta se pode instalá-lo para você (se ao digitar <code>python</code> o Windows abre a Microsoft Store, ele não está instalado). Se isso falhar, <a href="https://www.python.org/ftp/python/3.13.17/python-3.13.17-amd64.exe">baixe o Python aqui</a>, instale marcando <code>Add python.exe to PATH</code> e rode o <code>instalar.bat</code> de novo. Confira também se o ZScaler está autenticado.</p>
+            </div>
+            <div class="q">
+              <h3>Aparece "127.0.0.1 se recusou a se conectar"</h3>
+              <p>A ferramenta não está ligada neste computador. Se você ainda não instalou, faça o passo 2. Se já instalou, rode <code>iniciar.bat</code> na pasta da ferramenta e abra o endereço de novo.</p>
+            </div>
+            <div class="q">
+              <h3>As etapas 2 a 5 estão apagadas</h3>
+              <p>É normal: elas liberam em sequência. A 2 depois da 1, a 3 depois da 1 e da 2 (ou de pular a 2), a 4 depois da 3. A 5 é gerada sozinha ao fim da 4.</p>
+            </div>
+            <div class="q">
+              <h3>Apareceu "A senha não está mais na memória"</h3>
+              <p>A senha só fica na memória enquanto a ferramenta está aberta. Gere o relatório (etapa 1) novamente.</p>
+            </div>
+            <div class="q">
+              <h3>O navegador do robô apareceu na tela</h3>
+              <p>É a opção "Prints com a tela inteira do computador", marcada por padrão, para registrar a data e a hora do Windows nos prints. Evite usar o computador durante a execução. Se preferir que o robô rode em segundo plano, desmarque a opção.</p>
+            </div>
+            <div class="q">
+              <h3>Apareceu "O login não foi concluído" ou "A página de login do ONESOURCE não abriu"</h3>
+              <p>O ONESOURCE do UAT pode estar lento ou instável. Se a tela de login mostrar "An error has occurred" ou um aviso de desempenho, o problema é da plataforma e não da sua senha: aguarde alguns minutos e execute de novo. Confira também se o ZScaler está autenticado. A ferramenta espera cerca de 1 minuto pela tela de login (3 tentativas) e 1,5 minuto pela conclusão do login.</p>
+            </div>
+            <div class="q">
+              <h3>Dá para usar sem instalar, pelo navegador?</h3>
+              <p>O repositório traz uma configuração de GitHub Codespaces para isso, mas ela ainda está em validação para o acesso ao UAT. Por enquanto, use a instalação no Windows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="band-green" id="seguranca" aria-labelledby="t-seg">
+      <div class="wrap">
+        <h2 id="t-seg">Segurança dos <em>dados</em></h2>
+        <ul class="sec">
+          <li><h3>Senha do cliente</h3><p>Fica só na memória da ferramenta durante a execução e nunca é gravada em disco.</p></li>
+          <li><h3>Resultados</h3><p>Ficam na pasta <code>execucoes</code> do seu computador. Ela não é enviada ao repositório.</p></li>
+          <li><h3>Esta página</h3><p>Não recebe nenhum dado. Ela só explica a ferramenta.</p></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>TAX ONE Conferência da Reforma · Ferramenta de uso interno · Tax Lab</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
