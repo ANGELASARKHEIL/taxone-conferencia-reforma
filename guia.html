@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Guia completo | TAX ONE Conferência da Reforma</title>
-  <meta name="description" content="TAX ONE Conferência da Reforma: ferramenta interna que confere a Reforma Tributária no TAX ONE UAT em cinco etapas e entrega o relatório final em Excel e o plano de teste em Word.">
+  <meta name="description" content="TAX ONE Conferência da Reforma: ferramenta interna que confere a Reforma Tributária no TAX ONE UAT em seis etapas e entrega o relatório final em Excel e o plano de teste em Word.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,7 +25,7 @@
       <div class="wrap">
         <p class="eyebrow">Tax Lab · Reforma Tributária</p>
         <h1>TAX ONE <em>Conferência da Reforma</em></h1>
-        <p class="lead">Confere a Reforma Tributária no TAX ONE UAT em cinco etapas e entrega o relatório final em Excel e o plano de teste em Word. Abaixo está cada tela da ferramenta, com o que informar, o que clicar e o que você recebe.</p>
+        <p class="lead">Confere a Reforma Tributária no TAX ONE UAT em seis etapas e entrega o relatório final em Excel e o plano de teste em Word. Abaixo está cada tela da ferramenta, com o que informar, o que clicar e o que você recebe.</p>
       </div>
     </section>
 
@@ -56,7 +56,7 @@
             <li>
               <div class="dl-info">
                 <strong>Pacote em ZIP</strong> (alternativa)
-                <span class="dl-meta">TaxOneConferencia.zip · <span data-dl="zip-tamanho">4,8 MB</span></span>
+                <span class="dl-meta">TaxOneConferencia.zip · <span data-dl="zip-tamanho">4,9 MB</span></span>
                 <p>Extraia numa pasta do seu computador e dê dois cliques em <code>instalar.bat</code>. Use se a TI bloquear o instalador único.</p>
               </div>
               <a class="btn secondary" href="TaxOneConferencia.zip" download>Baixar</a>
@@ -73,8 +73,8 @@
           <details>
             <summary>Conferir a integridade dos arquivos (SHA-256)</summary>
             <p>No PowerShell, na pasta do arquivo: <code>Get-FileHash .\Instalar_TaxOne.exe</code></p>
-            <p><code>Instalar_TaxOne.exe</code><br><code data-dl="exe-sha">f92a3f39c8a6418ca9ed95a5c091ce27adf3902a3d4d70f476f8efbf43265bbf</code></p>
-            <p><code>TaxOneConferencia.zip</code><br><code data-dl="zip-sha">d33944a7bd4b5f1ec92dfdaac37609ca11f75cc0f7265d01ac79059dbac963ee</code></p>
+            <p><code>Instalar_TaxOne.exe</code><br><code data-dl="exe-sha">da4a282c4e43c914f18c6da3a66fc366cab956e93d1d9770e62c8f049ed76270</code></p>
+            <p><code>TaxOneConferencia.zip</code><br><code data-dl="zip-sha">444f89f41c3b9a5cbd3ffb603be7ff61103802eaf0a7e80a17aec76c8f8dd6e5</code></p>
           </details>
         </div>
         <h3 class="alt">Ou faça o passo a passo</h3>
@@ -99,7 +99,7 @@
           <li>
             <span class="n" aria-hidden="true">4</span>
             <h3>Preencha e execute</h3>
-            <p>Informe usuário e senha do cliente, empresa e período e clique em <strong>Executar todas as etapas</strong>. A execução completa leva de 10 a 15 minutos.</p>
+            <p>Escolha como entra no ONESOURCE (usuário e senha, ou conta Thomson Reuters por e-mail), informe empresa e período e clique em <strong>Executar todas as etapas</strong>. A execução completa leva de 10 a 15 minutos.</p>
             <a class="btn secondary" href="#etapa-1">Ver as telas</a>
           </li>
         </ol>
@@ -110,7 +110,7 @@
             <li><label><input type="checkbox"><span>Windows com Microsoft Edge e Microsoft Word</span></label></li>
             <li><label><input type="checkbox"><span>Python 3.10 ou superior (passo 1: se faltar, o instalador oferece instalar)</span></label></li>
             <li><label><input type="checkbox"><span>ZScaler autenticado (rede Thomson Reuters)</span></label></li>
-            <li><label><input type="checkbox"><span>Usuário e senha do cliente no TAX ONE UAT</span></label></li>
+            <li><label><input type="checkbox"><span>Acesso ao TAX ONE UAT: usuário e senha do ONESOURCE, ou o e-mail da conta Thomson Reuters (com a senha cadastrada no TAX ONE do cliente, se o e-mail não for da Thomson Reuters)</span></label></li>
             <li><label><input type="checkbox"><span>Código da empresa e período a conferir</span></label></li>
           </ul>
         </div>
@@ -126,7 +126,8 @@
             <li><a href="#etapa-2"><b>2</b> SAFX x relatório</a></li>
             <li><a href="#etapa-3"><b>3</b> Apuração x relatório</a></li>
             <li><a href="#etapa-4"><b>4</b> Conciliação x apuração</a></li>
-            <li><a href="#etapa-5"><b>5</b> Relatório final</a></li>
+            <li><a href="#etapa-5"><b>5</b> Contabilização x apuração</a></li>
+            <li><a href="#etapa-6"><b>6</b> Relatório final</a></li>
             <li><a href="#andamento">Andamento</a></li>
             <li><a href="#duvidas">Dúvidas comuns</a></li>
           </ol>
@@ -134,7 +135,7 @@
 
         <div class="content">
           <h2 id="t-telas">A ferramenta, <em>tela a tela</em></h2>
-          <p class="intro-t">As etapas aparecem nesta ordem, uma embaixo da outra. As etapas 2 a 5 ficam apagadas até a anterior terminar. Você pode rodar uma por vez ou tudo de uma vez.</p>
+          <p class="intro-t">As etapas aparecem nesta ordem, uma embaixo da outra. As etapas 2 a 6 ficam apagadas até serem liberadas pelas anteriores. Você pode rodar uma por vez ou tudo de uma vez.</p>
           <p class="preview-note"><strong>Prévia das telas.</strong> Os campos e botões pontilhados abaixo mostram como a ferramenta aparece; o preenchimento e a execução acontecem na ferramenta instalada (passo 3).</p>
 
           <article class="card" id="etapa-1" data-spy aria-labelledby="t-e1">
@@ -149,8 +150,10 @@
 
             <p class="k">Você informa</p>
             <dl class="fields">
-              <div class="field"><dt>Usuário</dt><dd>Usuário do cliente no TAX ONE UAT</dd></div>
-              <div class="field"><dt>Senha</dt><dd>Senha do cliente</dd></div>
+              <div class="field"><dt>Como você entra</dt><dd>Usuário e senha do ONESOURCE <em>ou</em> Conta Thomson Reuters (e-mail)</dd></div>
+              <div class="field"><dt>Usuário e senha</dt><dd>Login tradicional: usuário e senha do cliente no TAX ONE UAT</dd></div>
+              <div class="field"><dt>E-mail e cliente</dt><dd>Conta Thomson Reuters: e-mail e cliente, como aparece na lista de contas (ex.: BRIDGESTONE ou QRE)</dd></div>
+              <div class="field"><dt>Senha</dt><dd>Só com e-mail de cliente: a senha cadastrada no TAX ONE dele</dd></div>
               <div class="field"><dt>Empresa (código)</dt><dd>ex.: C04</dd></div>
               <div class="field"><dt>Período (MM/AAAA)</dt><dd>ex.: 10/2026</dd></div>
             </dl>
@@ -160,7 +163,8 @@
               <div class="field"><dt>Origem</dt><dd>Todas</dd></div>
             </dl>
             <p class="opt"><span class="chk" aria-hidden="true"></span><span><strong>Prints com a tela inteira do computador</strong>, mostrando a data e a hora do Windows. <em>Marcada por padrão.</em> O navegador do robô aparece na tela durante a execução: evite usar o computador enquanto ele roda.</span></p>
-            <p class="note">A senha fica só na memória da ferramenta enquanto as etapas rodam (é usada de novo na apuração e na conciliação) e nunca é gravada em disco.</p>
+            <p class="note">A senha fica só na memória da ferramenta enquanto as etapas rodam (é usada de novo na apuração, na conciliação e na contabilização) e nunca é gravada em disco.</p>
+            <p class="note"><strong>Conta Thomson Reuters:</strong> o navegador do robô fica sempre visível. Com e-mail @thomsonreuters.com ele para na tela de login corporativo: digite ID e senha (se a tela pedir) e aprove o PingID nessa janela (espera até 10 minutos) e ele segue sozinho. O acesso pode ser lembrado por 12 horas, criptografado pelo Windows, para não pedir o PingID a cada etapa; o botão <em>Esquecer acessos salvos</em> apaga.</p>
 
             <p class="k">Você clica</p>
             <p class="actions"><span class="chip">Executar relatório</span></p>
@@ -170,11 +174,12 @@
 
             <div class="all">
               <h4>Executar tudo de uma vez</h4>
-              <p>Roda as etapas 1 a 5 em sequência (relatório › SAFX › apuração › conciliação › relatório final e plano de teste em Word). Depois é só baixar os resultados de cada etapa.</p>
+              <p>Roda as etapas 1 a 6 em sequência (relatório › SAFX › apuração › conciliação › contabilização › relatório final e plano de teste em Word). Depois é só baixar os resultados de cada etapa.</p>
               <dl class="fields one">
                 <div class="field"><dt>SAFX para a etapa 2 <span class="opc">(opcional — sem arquivos, a etapa 2 é pulada)</span></dt><dd>Escolher arquivos (.txt, .csv, .xlsx ou .xlsm)</dd></div>
               </dl>
               <p class="opt"><span class="chk" aria-hidden="true"></span><span>Criar nova sessão de conciliação. <em>Marcada por padrão.</em></span></p>
+              <p class="opt"><span class="chk" aria-hidden="true"></span><span>Incluir a Contabilização (etapa 5). <em>Marcada por padrão.</em> O módulo tem licenciamento próprio; se não estiver disponível, a etapa é registrada como não disponível e o resto segue.</span></p>
               <p class="actions"><span class="chip strong">Executar todas as etapas</span></p>
             </div>
           </article>
@@ -249,8 +254,29 @@
             <header class="card-h">
               <span class="badge" aria-hidden="true">5</span>
               <div>
-                <h3 id="t-e5">Relatório final</h3>
-                <p class="desc">Um Excel consolidado com o resumo e as divergências de todas as etapas e o <strong>plano de teste em Word</strong> (modelo do cliente preenchido com cliente, ambiente, período, prints de tela de cada etapa e os Excel anexados). É gerado automaticamente ao fim da etapa 4.</p>
+                <h3 id="t-e5">Contabilização x apuração <span class="tagline">CBS</span></h3>
+                <p class="desc">Reforma Tributária do Consumo › Contabilização: mostra as telas do módulo, consulta e exporta as configurações contábeis, a visão sintética (saldo por configuração) e a visão analítica (lançamentos) do mesmo período e confere o saldo com a apuração. A coleta é só de consulta e exportação: nada é contabilizado nem estornado. O módulo exige licenciamento próprio.</p>
+              </div>
+            </header>
+            <p class="unlock">Libera depois da etapa 3</p>
+
+            <p class="k">Você informa</p>
+            <p class="none">Nada novo: usa o usuário, a empresa e o período da etapa 1.</p>
+
+            <p class="k">Você clica</p>
+            <p class="actions"><span class="chip">Gerar contabilização e comparar</span><span class="chip">Pular esta etapa</span></p>
+
+            <p class="k">Você recebe</p>
+            <p class="files"><span class="file">Resultado Contabilização x Apuração</span><span class="file">Contabilização – configurações (CSV)</span><span class="file">Contabilização – lançamentos (CSV)</span></p>
+            <p class="note">Mais uma tabela-resumo por estabelecimento, com o saldo da apuração, o valor apurado e contabilizado e as verificações marcadas. Se o módulo não estiver disponível para a empresa ou para o usuário, a etapa registra o aviso e o relatório final segue sem ela. Ao fim desta etapa, o relatório final é atualizado.</p>
+          </article>
+
+          <article class="card" id="etapa-6" data-spy aria-labelledby="t-e6">
+            <header class="card-h">
+              <span class="badge" aria-hidden="true">6</span>
+              <div>
+                <h3 id="t-e6">Relatório final</h3>
+                <p class="desc">Um Excel consolidado com o resumo e as divergências de todas as etapas e o <strong>plano de teste em Word</strong> (modelo do cliente preenchido com cliente, ambiente, período, prints de tela de cada etapa e os Excel anexados). É gerado automaticamente ao fim da etapa 4 e atualizado ao fim da etapa 5.</p>
               </div>
             </header>
             <p class="unlock">Libera depois da etapa 3</p>
@@ -276,7 +302,7 @@
               <li><strong>Em andamento:</strong> o texto da etapa termina com reticências (...).</li>
               <li><strong>Concluída:</strong> aparecem o resumo do resultado e os botões de download.</li>
               <li><strong>Erro:</strong> a mensagem do erro aparece no lugar do resumo.</li>
-              <li><strong>Pulada:</strong> só acontece na etapa 2.</li>
+              <li><strong>Pulada:</strong> só acontece nas etapas 2 e 5.</li>
             </ul>
             <p class="note">Os arquivos também ficam no seu computador, na pasta <code>execucoes</code> dentro da pasta da ferramenta, com uma subpasta para cada execução (data e hora no nome).</p>
           </article>
@@ -292,8 +318,12 @@
               <p>A ferramenta não está ligada neste computador. Se você ainda não instalou, faça o passo 2. Se já instalou, pesquise <strong>tax one</strong> na barra do Windows e abra <code>Conferencia Reforma Tributaria TAX ONE</code>; se não aparecer, rode <code>iniciar.bat</code> na pasta da ferramenta.</p>
             </div>
             <div class="q">
-              <h3>As etapas 2 a 5 estão apagadas</h3>
-              <p>É normal: elas liberam em sequência. A 2 depois da 1, a 3 depois da 1 e da 2 (ou de pular a 2), a 4 depois da 3. A 5 é gerada sozinha ao fim da 4.</p>
+              <h3>As etapas 2 a 6 estão apagadas</h3>
+              <p>É normal: elas liberam em sequência. A 2 depois da 1, a 3 depois da 1 e da 2 (ou de pular a 2), a 4 e a 5 depois da 3. A 6 é gerada sozinha ao fim da 4 e atualizada ao fim da 5.</p>
+            </div>
+            <div class="q">
+              <h3>A etapa 5 diz que a Contabilização não está disponível</h3>
+              <p>O módulo Contabilização depende de licenciamento contratado e de permissão do usuário. Sem isso, a ferramenta registra o aviso, pula a etapa e gera o relatório final com as demais. Para conferir, abra o menu Reforma Tributária do Consumo no TAX ONE com o mesmo usuário e veja se a Contabilização aparece.</p>
             </div>
             <div class="q">
               <h3>Apareceu "A senha não está mais na memória"</h3>
@@ -301,11 +331,23 @@
             </div>
             <div class="q">
               <h3>O navegador do robô apareceu na tela</h3>
-              <p>É a opção "Prints com a tela inteira do computador", marcada por padrão, para registrar a data e a hora do Windows nos prints. Evite usar o computador durante a execução. Se preferir que o robô rode em segundo plano, desmarque a opção.</p>
+              <p>É a opção "Prints com a tela inteira do computador", marcada por padrão, para registrar a data e a hora do Windows nos prints. Evite usar o computador durante a execução. Se preferir que o robô rode em segundo plano, desmarque a opção. Com a conta Thomson Reuters, a janela só é necessária para o login: depois dele o robô a fecha de propósito (o andamento avisa) e segue em segundo plano com a mesma sessão. Com a opção marcada, a janela fica aberta até o fim: não minimize nem feche.</p>
             </div>
             <div class="q">
               <h3>Apareceu "O login não foi concluído" ou "A página de login do ONESOURCE não abriu"</h3>
               <p>O ONESOURCE do UAT pode estar lento ou instável. Se a tela de login mostrar "An error has occurred" ou um aviso de desempenho, o problema é da plataforma e não da sua senha: aguarde alguns minutos e execute de novo. Confira também se o ZScaler está autenticado. A ferramenta espera cerca de 1 minuto pela tela de login (3 tentativas) e 1,5 minuto pela conclusão do login.</p>
+            </div>
+            <div class="q">
+              <h3>Entrei pela conta Thomson Reuters e o robô ficou aguardando</h3>
+              <p>É a tela de login corporativo (SSO) da Thomson Reuters: digite seu ID e senha na janela do robô (se a tela pedir) e aprove o PingID no celular. Ele espera até 10 minutos e segue sozinho. Se aparecer "Não achei o cliente", a mensagem lista as contas da sua conta Thomson Reuters: use o nome ou o ID da conta (ex.: QRE). Se o robô não conseguir escolher o cliente sozinho na lista de contas, ele avisa e espera você escolher o cliente e clicar em <em>Continue</em> na janela do robô; depois segue sozinho. Nesses casos, e quando o login falha, ele salva um arquivo <code>login_ciam_AAAAMMDD_HHMMSS.json</code> e um <code>.png</code> na pasta <code>%LOCALAPPDATA%\TaxOneConferencia\diagnostico</code> (fora das evidências, porque a lista de contas mostra outros clientes).</p>
+            </div>
+            <div class="q">
+              <h3>A janela do robô fechou sozinha durante o login Thomson Reuters</h3>
+              <p>Em alguns computadores a janela do robô fecha sozinha quando o login corporativo avança. Se o site apenas trocou a aba do login por outra, o robô segue na aba que ficou aberta. Se a janela some de vez, o robô percebe, avisa e tenta de novo no <strong>Chrome</strong> (se estiver instalado): faça o login outra vez na janela que abrir. Quando funciona, ele passa a usar esse navegador nas próximas execuções. Para fixar um navegador, use o campo <em>Navegador do robô</em> (Automático, Edge ou Chrome). Se continuar fechando, envie o arquivo <code>login_ciam_eventos_AAAAMMDD_HHMMSS.json</code> mais recente da pasta <code>%LOCALAPPDATA%\TaxOneConferencia\diagnostico</code>: ele mostra a linha do tempo (endereços sem parâmetros, abas e janelas) e não contém nada do que foi digitado.</p>
+            </div>
+            <div class="q">
+              <h3>O robô logou, mas a etapa falhou com "Locator.click: Timeout" (ou outro erro de tela)</h3>
+              <p>O robô tenta o clique normal, depois traz a aba para a frente, remove avisos que estejam por cima e, por último, usa um clique direto no elemento. Se mesmo assim falhar, ele salva <code>erro_tela.png</code> e <code>erro_tela.json</code> na pasta da etapa (<code>execucoes\&lt;execução&gt;\apuracao</code>, <code>conciliacao</code> ou <code>contabilizacao</code>): o print da tela, se a janela estava visível, o tamanho dela, o estado dos campos de seleção e o que estava cobrindo o clique. Envie esses dois arquivos junto com o andamento. Com o acesso salvo (até 12 horas), as etapas seguintes começam em segundo plano; se o acesso não valer mais, o robô avisa e abre a janela para você refazer o login.</p>
             </div>
             <div class="q">
               <h3>Dá para usar sem instalar, pelo navegador?</h3>
@@ -321,6 +363,7 @@
         <h2 id="t-seg">Segurança dos <em>dados</em></h2>
         <ul class="sec">
           <li><h3>Senha do cliente</h3><p>Fica só na memória da ferramenta durante a execução e nunca é gravada em disco.</p></li>
+          <li><h3>Acesso salvo</h3><p>Na conta Thomson Reuters, os cookies da sessão (nunca a senha) ficam por 12 horas, criptografados pelo Windows, em <code>%LOCALAPPDATA%\TaxOneConferencia\acessos</code>. O botão <em>Esquecer acessos salvos</em> apaga.</p></li>
           <li><h3>Resultados</h3><p>Ficam na pasta <code>execucoes</code> do seu computador. Ela não é enviada ao repositório.</p></li>
           <li><h3>Esta página</h3><p>Não recebe nenhum dado. Ela só explica a ferramenta.</p></li>
         </ul>
